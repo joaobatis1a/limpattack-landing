@@ -171,7 +171,11 @@ function setActive(i){
     if(cur){ requestAnimationFrame(()=>{ cur.style.transition = `width ${DURATION}ms linear`; cur.style.width='100%'; }); }
   });
   const activeFilm = document.querySelector('.film.active');
-  if(activeFilm) activeFilm.scrollIntoView({behavior:'smooth', inline:'center', block:'nearest'});
+  if(activeFilm){
+    const track = document.getElementById('filmstrip');
+    const targetLeft = activeFilm.offsetLeft - (track.clientWidth - activeFilm.clientWidth) / 2;
+    track.scrollTo({ left: targetLeft, behavior: 'smooth' });
+  }
 }
 
 function resetGalleryTimer(){
