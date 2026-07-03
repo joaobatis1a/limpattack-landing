@@ -1,0 +1,10 @@
+<svg width="1280" height="800" viewBox="0 0 1280 800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1280" height="800" fill="#132f66"/>
+  <rect x="18" y="18" width="1244" height="764" rx="28" fill="none" stroke="#ffd447" stroke-width="6" stroke-dasharray="18 14"/>
+  <g transform="translate(640,360)" text-anchor="middle" font-family="Arial, sans-serif">
+    <circle cx="0" cy="-40" r="46" fill="none" stroke="#3ba3ff" stroke-width="6"/>
+    <path d="M -18 -40 L -6 -26 L 20 -56" fill="none" stroke="#38d17a" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="0" y="60" fill="#ffffff" font-size="34" font-weight="700">Screenshot em breve</text>
+    <text x="0" y="100" fill="#9db4dd" font-size="22">Troque este arquivo em /assets</text>
+  </g>
+</svg>

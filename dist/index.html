@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LimpAttack — Jogue agora a aventura da Nala</title>
+<meta name="description" content="Baixe grátis o LimpAttack: jogo 2D infantil onde a heroína Nala combate os maus-hábitos usando o poder da higiene.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="cursor-glow"></div>
+<div id="progress"></div>
+
+<header id="siteHeader">
+  <div class="navbar">
+    <div class="logo">
+      <span class="logo-badge">🧼</span>
+      LimpAttack
+    </div>
+    <div class="navlinks" id="navlinks">
+      <div class="nav-pill" id="navPill"></div>
+      <a href="#home" data-section="home" class="active">Início</a>
+      <a href="#sobre" data-section="sobre">Sobre</a>
+      <a href="#downloads" data-section="downloads">Downloads</a>
+      <a href="#imagens" data-section="imagens">Galeria</a>
+      <a href="#equipe" data-section="equipe">Equipe</a>
+      <a href="#faq" data-section="faq">FAQ</a>
+    </div>
+    <a href="#downloads" class="cta-small">⬇ Baixar</a>
+    <div class="burger" id="burger"><span></span></div>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#home">Início</a>
+    <a href="#sobre">Sobre</a>
+    <a href="#downloads">Downloads</a>
+    <a href="#imagens">Galeria</a>
+    <a href="#equipe">Equipe</a>
+    <a href="#faq">FAQ</a>
+    <a href="#contato">Contato</a>
+  </div>
+</header>
+
+<section class="hero" id="home">
+  <div class="hero-bg-grid"></div>
+  <div class="hero-grad"></div>
+  <div class="blob blob1"></div>
+  <div class="blob blob2"></div>
+  <div class="bubbles" id="bubbles"></div>
+
+  <div class="wrap hero-grid">
+    <div>
+      <div class="eyebrow">✨ Indie Game · 6+ anos</div>
+      <h1 class="h1-hero">
+        Aventura.
+        <span class="mark"><span>Diversão.</span></span>
+        <span class="accent">Bons Hábitos.</span>
+      </h1>
+      <p class="hero-p">
+        Junte-se à <strong>Nala</strong> nesta aventura 2D para enfrentar inimigos que representam os maus-hábitos, usando o poder da higiene para restaurar a cidade.
+      </p>
+      <div class="hero-ctas">
+        <a href="#downloads" class="btn-primary"><span class="shine"></span>⬇ Baixar LimpAttack</a>
+        <button type="button" id="trailerBtn" class="btn-secondary">▶ Assistir Trailer</button>
+      </div>
+      <div class="badges">
+        <div><span class="dot" style="background:var(--mint)"></span>Grátis pra download</div>
+        <div><span class="dot" style="background:var(--sky)"></span>ODS 3 & 4 · ONU</div>
+        <div><span class="dot" style="background:var(--yellow)"></span>Pixel art brasileiro</div>
+      </div>
+      <div class="hero-counters">
+        <div><div class="counter" data-target="4">0</div><div class="counter-label">Mapas</div></div>
+        <div><div class="counter" data-target="12" data-suffix="+">0</div><div class="counter-label">Inimigos-hábito</div></div>
+        <div><div class="counter" data-target="100" data-suffix="%">0</div><div class="counter-label">Grátis</div></div>
+      </div>
+    </div>
+
+    <div class="hero-art" id="heroArt">
+      <div class="hero-art-shadow"></div>
+      <div class="hero-art-card" id="heroArtCard">
+        <div class="hero-art-dots"></div>
+        <img id="nalaHero" src="assets/nala-hero.png" alt="Nala, heroína do LimpAttack">
+        <div class="chip chip-tl">Player 1</div>
+        <div class="chip chip-br"><span class="pulse"></span>Nala · lvl. 99</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="scroll-cue">Explore ↓</div>
+</section>
+
+<section id="sobre">
+  <div class="wrap about-grid">
+    <div class="about-img-wrap reveal">
+      <div class="about-img-shadow"></div>
+      <img id="coverAbout" src="assets/cover-about.jpg" alt="Arte de capa do LimpAttack">
+    </div>
+    <div class="reveal reveal-delay-1">
+      <span class="pill">Sobre o jogo</span>
+      <h2>Combater maus-hábitos numa aventura que ensina <span class="sky">higiene</span> de verdade.</h2>
+      <p class="section-desc" style="margin-top:18px;max-width:520px;">
+        LimpAttack transforma a conscientização e o aprendizado em uma batalha épica e divertida — mostrando que bons hábitos são os melhores superpoderes.
+      </p>
+      <ul class="about-list">
+        <li><span class="check"></span>4 mapas com missões pra explorar</li>
+        <li><span class="check"></span>Sistema de combate contra inimigos-hábito</li>
+        <li><span class="check"></span>Mentoria em PDF pra pais e educadores</li>
+      </ul>
+      <a href="#sobre" class="link-more">Leia mais sobre o jogo
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section id="downloads" style="background:#fff2dc0d;">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="pill" style="background:var(--yellow)">Downloads</span>
+      <h2 style="margin-top:18px;font-size:clamp(2rem,3.6vw,2.8rem);">Baixe o LimpAttack</h2>
+      <p class="section-desc">Tudo grátis. Escolha a versão do jogo e leve a mentoria pra apoiar a criança.</p>
+    </div>
+    <div class="cards2">
+      <div class="dl-card reveal">
+        <div class="icn" style="background:var(--sky)">⬇</div>
+        <div class="dl-tags"><span class="dl-badge">Windows</span><span class="dl-sub">LimpAttack.exe</span></div>
+        <h3>Arquivo do jogo</h3>
+        <p>Clique abaixo para baixar o LimpAttack para o seu dispositivo desktop (Windows).</p>
+        <a href="downloads/LimpAttack.exe" download class="dl-btn">⬇ Baixar .exe</a>
+      </div>
+      <div class="dl-card reveal reveal-delay-1">
+        <div class="icn" style="background:var(--yellow)">📖</div>
+        <div class="dl-tags"><span class="dl-badge">PDF</span><span class="dl-sub">Guia.pdf</span></div>
+        <h3>Mentoria pra responsáveis</h3>
+        <p>O principal auxílio para responsáveis e mentores acompanharem a jornada da criança.</p>
+        <a href="downloads/Guia_Mentoria_LimpAttack_PC.pdf" download class="dl-btn">⬇ Baixar Mentoria.pdf</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="imagens" class="gallery-section">
+  <div class="hero-bg-grid"></div>
+  <div class="gallery-glow"></div>
+  <div class="wrap" style="position:relative;">
+    <div class="section-head reveal">
+      <span class="pill">Galeria</span>
+      <h2 style="margin-top:18px;color:#fff;font-size:clamp(2rem,3.6vw,2.8rem);">Direto do <span style="color:var(--yellow)">jogo</span>.</h2>
+      <p class="section-desc">Imagens reais capturadas do LimpAttack em ação. Clique para ampliar.</p>
+    </div>
+
+    <div class="gallery-shell reveal">
+      <div class="gallery-frame" id="galleryFrame">
+        <div class="gallery-topbar" id="gallerySegments"></div>
+        <img class="shot active" data-i="0" src="assets/screen-battle.jpg" alt="Tela de batalha">
+        <img class="shot" data-i="1" src="assets/screen-mission.jpg" alt="Missão do primeiro mapa">
+        <img class="shot" data-i="2" src="assets/screen-tent.jpg" alt="Interior de uma das tendas">
+        <img class="shot" data-i="3" src="assets/screen-explore.jpg" alt="Coleta de itens">
+        <img class="shot" data-i="4" src="assets/screen-placeholder.svg" alt="Screenshot em breve">
+        <img class="shot" data-i="5" src="assets/screen-placeholder.svg" alt="Screenshot em breve">
+        <div class="gallery-scrim"></div>
+        <div class="gallery-info">
+          <div class="gallery-count" id="galleryCount">01 / 04</div>
+          <div class="gallery-title" id="galleryTitle">Tela de batalha</div>
+        </div>
+        <div class="gallery-expand" id="galleryExpand" title="Ampliar">⤢</div>
+        <div class="gallery-nav-btn gallery-prev" id="galleryPrev">‹</div>
+        <div class="gallery-nav-btn gallery-next" id="galleryNext">›</div>
+      </div>
+
+      <div class="filmstrip" id="filmstrip">
+        <div class="film active" data-i="0"><img src="assets/screen-battle.jpg" alt="Tela de batalha"><span class="film-tag">Combate</span></div>
+        <div class="film" data-i="1"><img src="assets/screen-mission.jpg" alt="Missão do primeiro mapa"><span class="film-tag">Missão</span></div>
+        <div class="film" data-i="2"><img src="assets/screen-tent.jpg" alt="Interior de uma das tendas"><span class="film-tag">Exploração</span></div>
+        <div class="film" data-i="3"><img src="assets/screen-explore.jpg" alt="Coleta de itens"><span class="film-tag">Coleta</span></div>
+        <div class="film" data-i="4"><img src="assets/screen-placeholder.svg" alt="Screenshot em breve"><span class="film-tag">Em breve</span></div>
+        <div class="film" data-i="5"><img src="assets/screen-placeholder.svg" alt="Screenshot em breve"><span class="film-tag">Em breve</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="lightbox" id="lightbox">
+  <div class="lightbox-close" id="lightboxClose">✕</div>
+  <img id="lightboxImg" alt="">
+  <div class="lightbox-cap" id="lightboxCap"></div>
+</div>
+
+<div class="lightbox" id="videoLightbox">
+  <div class="lightbox-close" id="videoLightboxClose">✕</div>
+  <video id="trailerVideo" controls playsinline style="max-width:min(1000px,92vw);max-height:82vh;border-radius:18px;border:2px solid #fff;box-shadow:0 20px 60px rgba(0,0,0,.5);background:#000;">
+    <source src="assets/video/trailer.mp4" type="video/mp4">
+    Seu navegador não suporta vídeo HTML5.
+  </video>
+</div>
+
+<section id="metodologia">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="pill" style="background:var(--sky)">Metodologia</span>
+      <h2 style="margin-top:18px;font-size:clamp(2rem,3.6vw,2.8rem);">Os pilares do projeto</h2>
+      <p class="section-desc">LimpAttack é alinhado a dois Objetivos de Desenvolvimento Sustentável da ONU.</p>
+    </div>
+    <div class="pillars">
+      <a href="https://brasil.un.org/pt-br/sdgs/3" target="_blank" rel="noreferrer" class="pillar pillar-1 reveal">
+        <div class="pillar-top">
+          <div class="pillar-icn">❤️</div>
+          <span class="pillar-tag">ODS 3</span>
+        </div>
+        <h3>Saúde e Bem-Estar</h3>
+        <p>Proporcionar às crianças acesso a uma vida saudável através de hábitos de higiene e cuidado no dia a dia.</p>
+        <div class="more">Saiba mais <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg></div>
+      </a>
+      <a href="https://brasil.un.org/pt-br/sdgs/4" target="_blank" rel="noreferrer" class="pillar pillar-2 reveal reveal-delay-1">
+        <div class="pillar-top">
+          <div class="pillar-icn">🎓</div>
+          <span class="pillar-tag">ODS 4</span>
+        </div>
+        <h3>Educação de Qualidade</h3>
+        <p>Assegurar educação equitativa e de qualidade, com foco em conscientização direcionada às crianças.</p>
+        <div class="more">Saiba mais <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section id="equipe">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="pill" style="background:var(--mint)">Equipe</span>
+      <h2 style="margin-top:18px;font-size:clamp(2rem,3.6vw,2.8rem);">Os devs por trás do jogo</h2>
+      <p class="section-desc">Quatro estudantes-devs apaixonados por games que educam.</p>
+    </div>
+    <div class="team-grid" id="teamGrid"></div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap" style="max-width:800px;">
+    <div class="section-head reveal">
+      <span class="pill" style="background:var(--yellow)">Perguntas frequentes</span>
+      <h2 style="margin-top:18px;font-size:clamp(2rem,3.6vw,2.8rem);">Antes de baixar, saiba mais</h2>
+      <p class="section-desc">Reunimos as dúvidas mais comuns de pais, educadores e curiosos.</p>
+    </div>
+    <div id="faqList"></div>
+  </div>
+</section>
+
+<section id="contato">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="pill">Contato</span>
+      <h2 style="margin-top:18px;font-size:clamp(2rem,3.6vw,2.8rem);">Fale com a gente</h2>
+      <p class="section-desc">Dúvidas, sugestões ou parcerias — estamos abertos a conversar.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-card blue reveal">
+        <div class="contact-icn">✉️</div>
+        <h3>Nos mande um email</h3>
+        <p>Para dúvidas sobre o jogo, escreva pra <a href="mailto:limpattack@gmail.com?subject=Contato%20sobre%20o%20LimpAttack">limpattack@gmail.com</a>.</p>
+        <p style="margin-top:8px;">Contato direto com o CEO: <a href="mailto:arthur.gsf07@gmail.com?subject=Contato%20direto%20sobre%20o%20LimpAttack">arthur.gsf07@gmail.com</a>.</p>
+      </div>
+      <div class="contact-card yellow reveal reveal-delay-1">
+        <div class="contact-icn">⚠️</div>
+        <h3>Atenção</h3>
+        <p>Recomendamos que feedbacks e reclamações sejam enviados ao email oficial do LimpAttack.</p>
+        <p style="margin-top:8px;">O email pessoal do CEO deve ser usado apenas para assuntos específicos ou restritos.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-wave">
+    <svg viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0,32 C240,60 480,0 720,18 C960,36 1200,58 1440,24 L1440,0 L0,0 Z" fill="var(--cream)"></path></svg>
+  </div>
+  <div class="footer-glow"></div>
+
+  <div class="wrap">
+    <div class="footer-cta reveal">
+      <div>
+        <h3>Pronto pra embarcar na aventura?</h3>
+        <p>Baixe o LimpAttack agora e leve a Nala pra enfrentar os maus-hábitos.</p>
+      </div>
+      <a href="#downloads" class="btn-primary"><span class="shine"></span>⬇ Baixar grátis</a>
+    </div>
+
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo"><span class="logo-badge">🧼</span>LimpAttack</div>
+        <p class="footer-tagline">Um jogo 2D indie brasileiro que transforma bons hábitos de higiene em superpoderes, pra crianças de 6 a 12 anos.</p>
+        <div class="footer-badge-row">
+          <span class="footer-badge">ODS 3</span>
+          <span class="footer-badge">ODS 4</span>
+          <span class="footer-badge">Windows</span>
+        </div>
+        <div class="footer-socials">
+          <a class="footer-soc" href="mailto:limpattack@gmail.com" aria-label="Email">✉️</a>
+          <a class="footer-soc" href="https://github.com/guifigueireedo" target="_blank" rel="noreferrer" aria-label="GitHub">🐙</a>
+          <a class="footer-soc" href="https://instagram.com/guifigueireedo" target="_blank" rel="noreferrer" aria-label="Instagram">📸</a>
+          <button type="button" class="footer-soc" id="trailerBtnFooter" aria-label="Assistir trailer">▶️</button>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Navegação</h4>
+        <ul>
+          <li><a href="#sobre">Sobre o jogo</a></li>
+          <li><a href="#downloads">Downloads</a></li>
+          <li><a href="#imagens">Galeria</a></li>
+          <li><a href="#metodologia">Metodologia</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Comunidade</h4>
+        <ul>
+          <li><a href="#equipe">Nossa equipe</a></li>
+          <li><a href="#faq">Perguntas frequentes</a></li>
+          <li><a href="#contato">Fale conosco</a></li>
+          <li><a href="downloads/Guia_Mentoria_LimpAttack_PC.pdf">Guia pra pais</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contato</h4>
+        <ul>
+          <li><a href="mailto:limpattack@gmail.com">limpattack@gmail.com</a></li>
+          <li><a href="mailto:arthur.gsf07@gmail.com">Contato do CEO</a></li>
+          <li><a href="#downloads">Baixar .exe (Windows)</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2026 LimpAttack. Todos os direitos reservados.</span>
+      <span class="made-with">Feito com <span class="heart-beat">💙</span> por estudantes-devs brasileiros.</span>
+    </div>
+  </div>
+</footer>
+
+<div id="toTop">↑</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
