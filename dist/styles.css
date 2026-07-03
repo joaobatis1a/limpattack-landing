@@ -75,14 +75,6 @@
     transition:transform .35s cubic-bezier(.65,0,.35,1), width .35s cubic-bezier(.65,0,.35,1), opacity .2s;
     z-index:0;opacity:0;
   }
-  .cta-small{
-    display:inline-flex;align-items:center;gap:8px;
-    border:2px solid var(--navy);background:var(--navy);color:#fff;
-    padding:10px 20px;border-radius:999px;font-weight:800;font-size:0.8rem;
-    text-transform:uppercase;letter-spacing:.05em;box-shadow:var(--shadow-sm);
-    transition:transform .2s, box-shadow .2s;white-space:nowrap;
-  }
-  .cta-small:hover{transform:translateY(-3px);box-shadow:var(--shadow);}
 
   .burger{
     display:none;width:40px;height:40px;border-radius:50%;border:2px solid var(--navy);
