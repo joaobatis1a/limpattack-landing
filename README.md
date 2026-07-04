@@ -1,10 +1,10 @@
-# 🧹🎮 LimpAttack — Landing Page
+# 🌐 LimpAttack — Landing Page
 
-Landing page estática (HTML + CSS + JS puro) do jogo **LimpAttack**. Não precisa de build, framework ou instalação de dependências — é só HTML/CSS/JS. ✨
+Este repositório contém apenas a **landing page** (site de divulgação) do jogo **LimpAttack** — não é o jogo em si. É um site estático (HTML + CSS + JS puro), sem build, framework ou dependências pra instalar. ✨
 
 O site em si fica dentro da pasta `dist/`.
 
-## 🚀 Como rodar localmente
+## 🚀 Como rodar a landing page localmente
 
 Você tem 3 opções, da mais simples pra mais "correta":
 
@@ -55,5 +55,3 @@ dist/
 ├── assets/         → imagens do jogo e vídeo do trailer
 └── downloads/      → LimpAttack.exe e o Guia_Mentoria_LimpAttack_PC.pdf
 ```
-
-📝 Para detalhes de onde editar textos, cores, downloads e a galeria, veja o README dentro da própria pasta [`dist/README.md`](dist/README.md) — ele já tem tudo isso documentado.
