@@ -2,6 +2,8 @@
 
 Este repositório contém apenas a **landing page** (site de divulgação) do jogo **LimpAttack** — não é o jogo em si. É um site estático (HTML + CSS + JS puro), sem build, framework ou dependências pra instalar. ✨
 
+🔗 **Site no ar:** [https://limpattack.vercel.app/](https://limpattack.vercel.app/)
+
 O site em si fica dentro da pasta `dist/`.
 
 ## 🚀 Como rodar a landing page localmente
@@ -55,3 +57,9 @@ dist/
 ├── assets/         → imagens do jogo e vídeo do trailer
 └── downloads/      → LimpAttack.exe e o Guia_Mentoria_LimpAttack_PC.pdf
 ```
+
+📝 Para detalhes de onde editar textos, cores, downloads e a galeria, veja o README dentro da própria pasta [`dist/README.md`](dist/README.md) — ele já tem tudo isso documentado.
+
+## 📧 Contato
+
+Para mais informações, entre em contato por e-mail: **profissionalba1is1a@gmail.com**
