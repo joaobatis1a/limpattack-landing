@@ -3,10 +3,10 @@
 // com o nome de arquivo indicado no campo "photo" abaixo (ex: assets/team/arthur.jpg).
 // Se o arquivo não existir, o card mostra as iniciais automaticamente (fallback).
 const TEAM = [
-  {name:"Arthur Guilherme",role:"CEO & Dev. Full-Stack",bio:"Gosto de café e futebol tanto quanto gosto de dar vida a ideias que impactam o futuro.",initials:"AG",color:"var(--yellow)",photo:"assets/team/arthur.jpg",gh:"https://github.com/guifigueireedo",ig:"https://instagram.com/guifigueireedo",li:"https://www.linkedin.com/in/guifigueireedo"},
-  {name:"Guilherme Araujo",role:"CTO & Dev. Backend",bio:"Amo a programação e seus desafios. Construir o LimpAttack tem sido uma jornada incrível.",initials:"GA",color:"var(--sky)",photo:"assets/team/guilherme.jpg",gh:"https://github.com/guiaraujo011",ig:"https://instagram.com/guiaraujo011",li:"https://www.linkedin.com/in/guiiaraujo/"},
-  {name:"João Batista",role:"Designer de Produto & UX/UI",bio:"Crio designs para tirar o excesso de ideias da cabeça. Extraio o melhor pros nossos mini players.",initials:"JB",color:"var(--mint)",photo:"assets/team/joao.jpg",gh:"https://github.com/joaobatis1a",ig:"https://instagram.com/joaobatis1a",li:"https://www.linkedin.com/in/joaobatis1a"},
-  {name:"Pedro Bezerra",role:"Gerente de Projeto & Dev. Frontend",bio:"É fundamental transmitir nossas ideias da melhor forma para as crianças. Cuido de cada detalhe.",initials:"PB",color:"var(--yellow)",photo:"assets/team/pedro.jpg",gh:"https://github.com/peubzrr07",ig:"https://instagram.com/peubezerra07",li:"https://www.linkedin.com/in/pedrobezerraveloso/"},
+  {name:"Arthur Guilherme",role:"CEO & Dev. Full-Stack",bio:"Gosto de café e futebol tanto quanto gosto de dar vida a ideias que impactam o futuro.",initials:"AG",color:"var(--yellow)",photo:"assets/arthur.jpeg",gh:"https://github.com/guifigueireedo",ig:"https://instagram.com/guifigueireedo",li:"https://www.linkedin.com/in/guifigueireedo"},
+  {name:"Guilherme Araujo",role:"CTO & Dev. Backend",bio:"Amo a programação e seus desafios. Construir o LimpAttack tem sido uma jornada incrível.",initials:"GA",color:"var(--sky)",photo:"assets/araujo.jpeg",gh:"https://github.com/guiaraujo011",ig:"https://instagram.com/guiaraujo011",li:"https://www.linkedin.com/in/guiiaraujo/"},
+  {name:"João Batista",role:"Designer de Produto & UX/UI",bio:"Crio designs para tirar o excesso de ideias da cabeça. Extraio o melhor pros nossos mini players.",initials:"JB",color:"var(--mint)",photo:"assets/joao.jpeg",gh:"https://github.com/joaobatis1a",ig:"https://instagram.com/frontista",li:"https://www.linkedin.com/in/joao-batista-silva-neto/"},
+  {name:"Pedro Bezerra",role:"Gerente de Projeto & Dev. Frontend",bio:"É fundamental transmitir nossas ideias da melhor forma para as crianças. Cuido de cada detalhe.",initials:"PB",color:"var(--yellow)",photo:"assets/pedro.jpeg",gh:"https://github.com/peubzrr07",ig:"https://instagram.com/peubezerra07",li:"https://www.linkedin.com/in/pedrobezerraveloso/"},
 ];
 
 const ICON_GH = '<svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.57.1.78-.25.78-.55v-1.94c-3.2.7-3.87-1.54-3.87-1.54-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.7.08-.7 1.16.08 1.78 1.2 1.78 1.2 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.23-1.28-5.23-5.7 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.47.11-3.06 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.77.11 3.06.74.8 1.19 1.83 1.19 3.09 0 4.43-2.69 5.4-5.25 5.69.41.36.78 1.08.78 2.17v3.22c0 .31.21.66.79.55A10.51 10.51 0 0 0 23.5 12c0-6.27-5.23-11.5-11.5-11.5z"/></svg>';
@@ -135,9 +135,8 @@ const GALLERY = [
   {tag:'Combate', title:'Tela de batalha'},
   {tag:'Missão', title:'Missão do primeiro mapa'},
   {tag:'Exploração', title:'Interior de uma das tendas'},
-  {tag:'Coleta', title:'Coleta de itens'},
-  {tag:'Em breve', title:'Reserve pra sua próxima screenshot'},
-  {tag:'Em breve', title:'Reserve pra sua próxima screenshot'},
+  {tag:'Aventura', title:'Labirinto escuro'},
+  {tag:'Desafio', title:'Receba um desafio'},
 ];
 const shots = document.querySelectorAll('.shot');
 const thumbs = document.querySelectorAll('.thumb');
